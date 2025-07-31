@@ -26,13 +26,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <section>
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand text-white fw-bold" href="#">
-                        <img src="logo.png" alt="" class="logo">
+                    <a class="navbar-brand fw-bold" href="#">
+                        SD WHEELS
                     </a>
                     <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav">
@@ -40,14 +40,19 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">New Cars</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Used Cars</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#cars">New Cars</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#cars">Used Cars</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#location">Contact</a></li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-danger ms-2" href="https://wa.me/27724278359" target="_blank">
+                                    Get a Quote
+                                </a>
+                            </li>
                         </ul>
+
                     </div>
                 </div>
             </nav>
@@ -74,7 +79,7 @@
         </section>
     </header>
     <!-- About Us Section -->
-    <section class="py-5 bg-black text-white mt-5">
+    <section class="py-5 bg-black text-white mt-5" id="about">
         <div class="container text-center">
             <h2 class="fw-bold display-5">Our Service</h2>
             <p class="mb-5 mx-auto" style="max-width: 700px;">
@@ -179,7 +184,7 @@
     </section>
 
     <!-- Featured Car Promos Section -->
-    <section class="featured-promos py-5">
+    <section class="featured-promos py-5" id="cars">
         <div class="container text-white text-center">
             <p class="mb-5 mx-auto" style="max-width: 700px;">
                 Discover our best automotive deals tailored to your needs. Whether you're buying a new ride or
@@ -270,7 +275,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="location">
         <!-- Contact Box -->
         <div class="contact-card contact-boxes row mt-5 mx-auto position-relative contact-form-box contact-info">
             <!-- Contact Info -->
@@ -333,7 +338,9 @@
                 <!-- Company Info -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box ">
-                        <img src="logo.png" alt="SD Wheels Logo" style="max-width: 150px;">
+                        <a class="navbar-brand text-white fw-bold" href="#">
+                            SD WHEELS
+                        </a>
                         <p class="text-left mt-3">
                             SD WHEELS (PTY) LTD is your trusted partner for quality vehicle sales and genuine auto
                             parts.
