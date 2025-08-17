@@ -145,9 +145,36 @@ body {
     border-bottom: 3px solid #c9192f;
 }
 
+.imagem-mobile {
+    display: none;
+}
+
+/* Torna o ícone do toggle vermelho */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .imagem-mobile {
+        display: block !important;
+        width: inherit;
+    }
+
+    .imagem-mobile img {
+        width: inherit;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-collapse {
+        padding: 1rem;
     }
 
     .car-categories {
@@ -163,8 +190,13 @@ body {
     }
 
     .hero .btn {
-        width: 100%;
+        width: auto;
         margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 6rem 15px 50px;
+        text-align: center;
     }
 }
 
