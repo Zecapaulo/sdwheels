@@ -14,7 +14,50 @@
     <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.svg">
+    <style>
+        .car-details {
+            border: 1px solid #eee;
+        }
 
+        .car-details h3 {
+            font-weight: 700;
+        }
+
+        .table th {
+            color: #666;
+            font-weight: 500;
+            width: 25%;
+        }
+
+        .table td {
+            color: #333;
+        }
+
+        .img-thumbnailss {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .img-thumbnails:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            cursor: pointer;
+            transition: transform 0.2s ease, border 0.2s;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+            border: 2px solid #000;
+        }
+
+        .subcars {
+            border: 1px solid #c9192f;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+    </style>
     <!-- 
   Developed by: Zeca Paulo
   Email: zecasemail@gmail.com
@@ -26,177 +69,92 @@
 </head>
 
 <body>
-    <header class="header" id="home">
-        <section>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand fw-bold" href="#">
-                        SD WHEELS
-                    </a>
-                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cars.html">New Cars</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cars.html">Used Cars</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#location">Contact</a></li>
-                            <li class="nav-item">
-                                <a class="btn btn-outline-danger ms-2" href="https://wa.me/27724278359" target="_blank">
-                                    Get a Quote
-                                </a>
-                            </li>
-                        </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                SD WHEELS
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cars">New Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cars">Used Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Contact</a></li>
+                    <li class="nav-item">
 
-                    </div>
-                </div>
-            </nav>
+                    </li>
+                </ul>
 
-            <!-- Hero Section -->
-            <div class="hero container">
-                <h1>Your Trusted Car <br> Parts Dealer</h1>
-                <h6>SD WHEELS (PTY) LTD is your trusted partner for quality <br> vehicle sales and genuine auto
-                    parts.</h6>
-                <div class="mt-4">
-                    <a href="cars.html" class="btn btn-primary">Browse Cars</a>
-                    <a href="#" class="btn btn-outline-light">Auto Parts</a>
-                </div>
-            </div>
-
-            <!-- Car Category Selector -->
-            <div class="car-categories">
-                <div class="active">01 Family Cars</div>
-                <div class="active">02 SUVs</div>
-                <div class="active">03 Hatchbacks</div>
-                <div class="active">04 Pick-Ups</div>
-                <div class="active">05 Commercial Vehicles</div>
-
-            </div>
-
-        </section>
-    </header>
-    <!-- About Us Section -->
-    <section class="featured-promos py-5 text-white mt-5" id="about">
-        <div class="container text-center">
-            <h2 class="fw-bold display-5">Our Service</h2>
-            <p class="mb-5 mx-auto" style="max-width: 700px;">
-                At SD WHEELS PTY, LDA, we specialize in the sale of new and used cars, as well as genuine automotive
-                parts and
-                accessories. With a team of experienced professionals, we ensure top-quality products and services that
-                meet your
-                mobility needs.
-            </p>
-
-            <div class="row justify-content-center g-4 mt-4 mb-5">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="position-relative service-x rounded-3 h-100 p-4 text-white text-center">
-                        <h5 class="mt-5 mb-3 fw-bold">Certified New & Used Cars</h5>
-                        <p>We offer a wide selection of high-quality vehicles, both brand-new and pre-owned, thoroughly
-                            inspected
-                            for your peace of mind.</p>
-                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Learn More</a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="position-relative service-x rounded-3 h-100 p-4 text-white text-center">
-                        <h5 class="mt-5 mb-3 fw-bold">Original Auto Parts</h5>
-                        <p>Get access to genuine car parts and accessories for top brands — durability and performance
-                            you can
-                            trust.</p>
-                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Learn More</a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="position-relative service-x rounded-3 h-100 p-4 text-white text-center">
-                        <h5 class="mt-5 mb-3 fw-bold">Professional Car Services</h5>
-                        <p>From diagnostics to maintenance, our experienced team ensures your vehicle is always running
-                            at its best.
-                        </p>
-                        <a href="#" class="btn btn-outline-light btn-sm mt-2">Learn More</a>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="imagem-mobile">
-            <div class="container">
-                <img src="bmw black.png" alt="">
-            </div>
-        </div>
-        <div class=" sevirce-us-section  bg-black text-white">
+    </nav>
+    <section class="featured-promos py-5 text-white mt-5">
+        <div class="container my-5 cars">
+            <div class="row g-4 ">
 
-            <div class="container ">
-                <div class="row align-items-center">
+                <!-- Imagem principal -->
+                <div class="col-md-7">
+                    <img id="mainImage" src="img/default.jpg" alt="car" class="img-fluid rounded shadow w-100">
 
-                    <!-- Imagem do carro -->
-                    <div class="col-md-6 mb-4 mb-md-0 text-center">
-                        <div class="img-fluid rounded shadow"></div>
+                    <!-- Galeria de miniaturas -->
+                    <div class="d-flex justify-content-between mt-3 subcars" id="gallery"></div>
+                </div>
+
+                <!-- Detalhes do carro -->
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-between align-items-center mb-4 w-100">
+                        <h2 class="underline" id="carTitle">Car Name</h2>
+                        <a class="btn btn-outline-danger" href="#" id="quoteBtn" target="_blank">Get a Quote</a>
                     </div>
 
-                    <!-- Texto de serviços -->
-                    <div class="col-md-6">
-                        <h6 class="text-uppercase mb-2">Our Expertise</h6>
-                        <h2 class="fw-bold mb-4">Experience Excellence in Every Service</h2>
+                    <div class="car-details p-4 rounded shadow bg-white">
+                        <table class="table table-bordered text-center align-middle">
+                            <tbody>
+                                <tr class="bg-light">
+                                    <th><i class="bi bi-palette-fill"></i> Color</th>
+                                    <td id="carColor">White</td>
+                                    <th><i class="bi bi-calendar-fill"></i> Year</th>
+                                    <td id="carYear">—</td>
+                                </tr>
+                                <tr>
+                                    <th><i class="bi bi-fuel-pump-fill"></i> Fuel</th>
+                                    <td id="carFuel">Petrol</td>
+                                    <th><i class="bi bi-gear-fill"></i> Transmission</th>
+                                    <td id="carTransmission">Automatic</td>
+                                </tr>
+                                <tr class="bg-light">
+                                    <th><i class="bi bi-speedometer2"></i> Mileage</th>
+                                    <td id="carMileage">—</td>
+                                    <th><i class="bi bi-card-checklist"></i> Condition</th>
+                                    <td id="carCondition">Used</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                        <ul class="list-unstyled">
-                            <li class="mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="mb-1 text-white">New & Used Car Sales</h5>
-                                    <span class="text-white">100%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" style="width: 100%;"></div>
-                                </div>
-                            </li>
+                        <a href="#" id="talkBtn" class="btn btn-dark w-100 mt-3">Talk with Us</a>
+                    </div>
 
-                            <li class="mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="mb-1 text-white">Auto Parts & Accessories</h5>
-                                    <span class="text-white">100%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" style="width: 100%;"></div>
-                                </div>
-                            </li>
-
-                            <li class="mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="mb-1 text-white">After-Sales Support</h5>
-                                    <span class="text-white">100%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" style="width: 100%;"></div>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <p class="mb-5 mx-auto" style="max-width: 700px;">
-                            At SD WHEELS PTY, LDA, we combine technical knowledge, high-quality parts, and customer
-                            commitment to deliver a
-                            full-service automotive experience — from vehicle purchase to aftercare.
+                    <div class="footer p-3 mt-4 bg-light rounded">
+                        <p class="mb-0 text-muted" id="carDesc">
+                            Vehicle description will appear here.
                         </p>
                     </div>
-
                 </div>
+
             </div>
         </div>
-    </section>
 
-    <!-- Featured Car Promos Section -->
-    <section class="featured-promos py-5" id="cars">
-        <div class="container ">
+        <div class="container text-white text-center mt-3">
             <div class="titulos-cars d-flex justify-content-between mb-4 w-100">
                 <h2 class="underline">New Arrivals</h2>
-                <a class="btn btn-outline-danger" href="cars.html" target="_blank">
+                <a class="btn btn-outline-danger" href="https://wa.me/27724278359" target="_blank">
                     view More
                 </a>
             </div>
@@ -257,36 +215,7 @@
 
                 </div>
             </div>
-        </div>
 
-        <!-- Car Brands Section -->
-        <div class="brands-section">
-            <h2 class="fw-bold mb-4">Top Brands You Can Trust</h2>
-            <p class="mb-5 mx-auto" style="max-width: 700px;">
-                Discover our best automotive deals tailored to your needs. Whether you're buying a new ride or
-                upgrading, SD
-                WHEELS offers unmatched value, reliability, and service.
-            </p>
-            <div class="brand-grid">
-                <img src="honda.svg" alt="Honda">
-                <img src="toyota.svg" alt="Toyota">
-                <img src="hyundai.svg" alt="Hyundai">
-                <img src="Lexus.svg" alt="Lexus">
-                <img src="Mitsubishi.svg" alt="Mitsubishi">
-                <img src="mazda.svg" alt="Mazda">
-                <img src="kia.svg" alt="Kia">
-                <img src="ford.svg" alt="Ford">
-                <img src="Chevrolet.svg" alt="Chevrolet">
-                <img src="suzuki.svg" alt="Suzuki">
-                <img src="mg.svg" alt="MG">
-                <img src="audi.svg" alt="Audi">
-                <img src="mercedez.svg" alt="Mercedes-Benz">
-                <img src="vw.svg" alt="Volkswagen">
-                <img src="bmw.svg" alt="BMW">
-                <img src="volvo.svg" alt="Volvo">
-                <img src="nissan.svg" alt="Nissan">
-                <img src="Opel.svg" alt="Opel">
-            </div>
         </div>
     </section>
 
@@ -438,9 +367,26 @@
         </div>
     </footer>
 
+    <script>
+        // Seleciona imagem principal
+        const mainImage = document.getElementById("mainImage");
+
+        // Seleciona todas as miniaturas
+        const galleryImages = document.querySelectorAll(".gallery-img");
+
+        // Adiciona evento de clique em cada miniatura
+        galleryImages.forEach(img => {
+            img.addEventListener("click", function () {
+                mainImage.src = this.src; // Troca imagem principal
+                mainImage.alt = this.alt; // Atualiza descrição
+            });
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="car-data.js"></script>
+
 </body>
 
 </html>

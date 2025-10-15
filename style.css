@@ -74,6 +74,15 @@ body {
     color: white;
 }
 
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
 .btn-primary {
     background-color: #c9192f;
     border: none;
@@ -82,6 +91,12 @@ body {
 .hero {
     padding: 16rem 15px 50px;
     /* text-align: center; */
+}
+
+.underline {
+    color: white;
+    border-bottom: 3px solid #c9192f;
+
 }
 
 .logo {
@@ -372,9 +387,11 @@ section {
     border: 1px solid #c9192f;
     border-radius: 8px;
     overflow: hidden;
+    display: inline-grid;
     position: relative;
     text-align: center;
     color: #fff;
+    height: 100%;
 }
 
 .promo-card .badge {
@@ -393,6 +410,7 @@ section {
     background-color: black;
     max-height: 285px;
     object-fit: contain;
+    height: inherit;
     padding: 20px 10px 0;
     width: 100%;
 }
